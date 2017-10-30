@@ -31,19 +31,46 @@ function Ingresar(){
     });
 }
 
-function Guardar(){
+function Guardar()
+{
     var patente = $("#patente").val();
     var email = localStorage.getItem("email");
+    var color= $("#color").val();
+    var marca = $("#marca").val();
     var funcionAjax = $.ajax({
         url:"http://localhost:80/Estacionamiento/Clases/guardar.php",
         type: "POST",
         data: { patente,
-                email
+                email,
+                marca,
+                color
         }
     }).then(function(retorno){
         console.log(retorno);
         if(retorno === "ok"){
             alert("Ingresado correctamente");
+        }
+    });
+}
+
+function Borrar()
+{
+    var patente = $("#patente").val();
+    var email = localStorage.getItem("email");
+    var color= $("#color").val();
+    var marca = $("#marca").val();
+    var funcionAjax = $.ajax({
+        url:"http://localhost:80/Estacionamiento/Clases/borrar.php",
+        type: "POST",
+        data: { patente,
+                email,
+                marca,
+                color
+        }
+    }).then(function(retorno){
+        console.log(retorno);
+        if(retorno === "ok"){
+            alert("Borrado correctamente");
         }
     });
 }

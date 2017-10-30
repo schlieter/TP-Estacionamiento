@@ -2,3 +2,20 @@
     float: none;
     margin: 0 auto;
 }
+.bodyLogin{
+    background-color: #FFFFFF;
+	/*background-image: url("./garaje.jpg");*/
+	background-size: cover;
+}/*estilos dinamicos segun bootstrap*/
+html, body{
+    height: 100%;
+  }
+  
+/*.contenedor{
+    height: 49%;
+    background-color: #6A737C;
+    margin: 1% 1%;
+    background-image: url("./auto.jpg");
+	background-size: cover;
+  }*/
+  

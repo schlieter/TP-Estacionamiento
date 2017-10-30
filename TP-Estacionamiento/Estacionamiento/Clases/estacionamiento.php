@@ -1,11 +1,11 @@
 <?php
-include_once "./vehiculo.php";
+
 class Estacionamiento{
     //toma el vehiculo y lo guarda en un archivo
 
     //abrir un puntero a un archivo
 
-    public static function Guardar($patente,$email){
+    /*public static function Guardar($patente,$email){
         $auto = new vehiculo($patente,$email);
         $auto->fechIngreso = date("Y/m/d H:i:s");
         $archivo = fopen("../Archivos/estacionados.txt","a");
@@ -47,3 +47,4 @@ class Estacionamiento{
         }
     }
 }
+
