@@ -1,16 +1,28 @@
 .col-centrada{
     float: none;
-    margin: 0 auto;
+    padding-top: 200px;
+    /*display: block;
+    margin-left: auto;
+    margin-right: auto;*/
 }
 .bodyLogin{
-    background-color: #FFFFFF;
-	/*background-image: url("./garaje.jpg");*/
-	background-size: cover;
+    
+	background-image: url("./garaje.jpg");
+    background-size: cover;
+    background-repeat: no repeat;
+    /*padding-top: 200px;*/
 }/*estilos dinamicos segun bootstrap*/
 html, body{
     height: 100%;
   }
-  
+header{
+    height: 25%;
+    background-image: url("./g.jpg");
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
 /*.contenedor{
     height: 49%;
     background-color: #6A737C;
